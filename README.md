@@ -40,17 +40,45 @@ Grama-Yatri solves this by enabling the passenger community itself to serve as t
 
 ## Screenshots
 
-> Screenshots will be added after final build. Placeholder paths are listed below.
+> Screenshots captured from the application running on an Android device.
 
-| Screen | Preview |
+---
+
+### Core App Flow
+
+| Splash / Onboarding | Home — English | Home — Alert Active |
+|---|---|---|
+| <img src="screenshots/splash.png" width="220"/> | <img src="screenshots/home_dashboard_english.png" width="220"/> | <img src="screenshots/home_dashboard_alert_english.png" width="220"/> |
+| App launch screen with branding and onboarding entry point | Home screen showing weekly schedule tabs, route cards with operator, bus number, and route health status | Home screen with an active alert banner surfaced on a route card |
+
+---
+
+### Live Tracking and Ping Flow
+
+| Live Tracking — No Report | Live Tracking — After Ping | Ping Bus Bottom Sheet |
+|---|---|---|
+| <img src="screenshots/live_tracking_no_report.png" width="220"/> | <img src="screenshots/live_tracking_after_ping.png" width="220"/> | <img src="screenshots/ping_bus_bottom_sheet.png" width="220"/> |
+| Route timeline with no live data — stops shown with no ETA | Route timeline updated after a community ping — ETAs calculated and reporter attribution displayed per stop | Ping Bus bottom sheet — user selects stop and report type before submitting |
+
+---
+
+### Alerts Flow
+
+| Report an Alert | Alerts Screen |
 |---|---|
-| Splash / Onboarding | ![Splash](screenshots/splash.png) |
-| Home — Weekly Schedule | ![Home](screenshots/home.png) |
-| Live Tracking Timeline | ![Live Tracking](screenshots/live_tracking.png) |
-| Ping Bus Bottom Sheet | ![Ping](screenshots/ping.png) |
-| Alerts Screen | ![Alerts](screenshots/alerts.png) |
-| Profile / Kannada Support | ![Profile](screenshots/profile.png) |
+| <img src="screenshots/report_alert.png" width="220"/> | <img src="screenshots/alerts_english.png" width="220"/> |
+| Alert reporting screen — user submits a cancellation or delay notice | Alerts screen listing active and resolved route alerts with status badges |
 
+---
+
+### Kannada and Accessibility
+
+| Home — Kannada | Live Tracking — Kannada | Alerts — Kannada | Profile |
+|---|---|---|---|
+| <img src="screenshots/home_dashboard_kannada.png" width="220"/> | <img src="screenshots/live_tracking_kannada.png" width="220"/> | <img src="screenshots/alerts_kannada.png" width="220"/> | <img src="screenshots/profile_english.png" width="220"/> |
+| Home screen with full Kannada UI — weekday tabs, route cards, and health labels in Kannada | Live Tracking timeline rendered in Kannada — stop names, ETA labels, and reporter attribution | Alerts screen in Kannada — alert messages and status chips translated | Profile screen — display name, preferred stop, language selector, and Voice Assist settings |
+
+---
 ---
 
 ## Tech Stack
