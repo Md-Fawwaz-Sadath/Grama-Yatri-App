@@ -42,43 +42,109 @@ Grama-Yatri solves this by enabling the passenger community itself to serve as t
 
 > Screenshots captured from the application running on an Android device.
 
----
-
 ### Core App Flow
 
-| Splash / Onboarding | Home — English | Home — Alert Active |
-|---|---|---|
-| <img src="screenshots/splash.png" width="220"/> | <img src="screenshots/home_dashboard_english.png" width="220"/> | <img src="screenshots/home_dashboard_alert_english.png" width="220"/> |
-| App launch screen with branding and onboarding entry point | Home screen showing weekly schedule tabs, route cards with operator, bus number, and route health status | Home screen with an active alert banner surfaced on a route card |
-
----
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Splash / Onboarding</strong><br><br>
+      <img src="screenshots/splash.png" width="260"/><br><br>
+      App launch screen with branding and onboarding entry point.
+    </td>
+    <td align="center" width="50%">
+      <strong>Home Dashboard — English</strong><br><br>
+      <img src="screenshots/home_dashboard_english.png" width="260"/><br><br>
+      Weekly schedule tabs, route cards, operator details, bus number, and route health summary.
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Home Dashboard — Active Alert</strong><br><br>
+      <img src="screenshots/home_dashboard_alert_english.png" width="260"/><br><br>
+      Route card showing active alert count and Attention health state.
+    </td>
+    <td align="center" width="50%">
+      <strong>Profile Settings</strong><br><br>
+      <img src="screenshots/profile_english.png" width="260"/><br><br>
+      Display name, language selection, preferred route, and preferred stop settings.
+    </td>
+  </tr>
+</table>
 
 ### Live Tracking and Ping Flow
 
-| Live Tracking — No Report | Live Tracking — After Ping | Ping Bus Bottom Sheet |
-|---|---|---|
-| <img src="screenshots/live_tracking_no_report.png" width="220"/> | <img src="screenshots/live_tracking_after_ping.png" width="220"/> | <img src="screenshots/ping_bus_bottom_sheet.png" width="220"/> |
-| Route timeline with no live data — stops shown with no ETA | Route timeline updated after a community ping — ETAs calculated and reporter attribution displayed per stop | Ping Bus bottom sheet — user selects stop and report type before submitting |
-
----
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Live Tracking — No Recent Report</strong><br><br>
+      <img src="screenshots/live_tracking_no_report.png" width="260"/><br><br>
+      Timeline view before any live community report is available.
+    </td>
+    <td align="center" width="50%">
+      <strong>Live Tracking — After Ping</strong><br><br>
+      <img src="screenshots/live_tracking_after_ping.png" width="260"/><br><br>
+      ETA timeline updated after a passenger reports the bus location.
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Ping Bus Bottom Sheet</strong><br><br>
+      <img src="screenshots/ping_bus_bottom_sheet.png" width="260"/><br><br>
+      User selects a stop and submits either “I am on the bus” or “Bus just passed me.”
+    </td>
+    <td align="center" width="50%">
+      <strong>Report Alert</strong><br><br>
+      <img src="screenshots/report_alert.png" width="260"/><br><br>
+      Alert reporting form for delays, cancellations, and route information.
+    </td>
+  </tr>
+</table>
 
 ### Alerts Flow
 
-| Report an Alert | Alerts Screen |
-|---|---|
-| <img src="screenshots/report_alert.png" width="220"/> | <img src="screenshots/alerts_english.png" width="220"/> |
-| Alert reporting screen — user submits a cancellation or delay notice | Alerts screen listing active and resolved route alerts with status badges |
-
----
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Alerts Screen — English</strong><br><br>
+      <img src="screenshots/alerts_english.png" width="260"/><br><br>
+      Active route alerts with Listen and local Dismiss actions.
+    </td>
+    <td align="center" width="50%">
+      <strong>Alerts Screen — Kannada</strong><br><br>
+      <img src="screenshots/alerts_kannada.png" width="260"/><br><br>
+      Kannada alert interface with translated labels and Voice Assist support.
+    </td>
+  </tr>
+</table>
 
 ### Kannada and Accessibility
 
-| Home — Kannada | Live Tracking — Kannada | Alerts — Kannada | Profile |
-|---|---|---|---|
-| <img src="screenshots/home_dashboard_kannada.png" width="220"/> | <img src="screenshots/live_tracking_kannada.png" width="220"/> | <img src="screenshots/alerts_kannada.png" width="220"/> | <img src="screenshots/profile_english.png" width="220"/> |
-| Home screen with full Kannada UI — weekday tabs, route cards, and health labels in Kannada | Live Tracking timeline rendered in Kannada — stop names, ETA labels, and reporter attribution | Alerts screen in Kannada — alert messages and status chips translated | Profile screen — display name, preferred stop, language selector, and Voice Assist settings |
-
----
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Home Dashboard — Kannada</strong><br><br>
+      <img src="screenshots/home_dashboard_kannada.png" width="260"/><br><br>
+      Kannada interface showing route health, weekday tabs, route cards, and alert status.
+    </td>
+    <td align="center" width="50%">
+      <strong>Live Tracking — Kannada</strong><br><br>
+      <img src="screenshots/live_tracking_kannada.png" width="260"/><br><br>
+      Live tracking timeline rendered with Kannada labels, ETA status, and reporter attribution.
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <strong>Profile — Kannada</strong><br><br>
+      <img src="screenshots/profile_kannada.png" width="260"/><br><br>
+      Kannada profile screen with language, display name, and preferred stop settings.
+    </td>
+    <td align="center" width="50%">
+      <strong>Voice Assist Support</strong><br><br>
+      <img src="screenshots/live_tracking_kannada.png" width="260"/><br><br>
+      Listen action reads bus status aloud for users who prefer audio guidance.
+    </td>
+  </tr>
+</table>
 ---
 
 ## Tech Stack
