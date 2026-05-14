@@ -1,26 +1,38 @@
+# Android Studio / IntelliJ
 *.iml
-.gradle
+.idea/
+.gradle/
 .gradle-user-home*/
 .android-user-home/
-/local.properties
-/.idea/caches
-/.idea/caches/
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-/.idea/
-.DS_Store
-/build
-/app/build/
-/captures
-.externalNativeBuild
-.cxx
-.android/
-.kotlin/
+
+# Local machine configuration
 local.properties
+/local.properties
+
+# Build outputs
+build/
+*/build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Kotlin / Android generated files
+.kotlin/
+.android/
+
+# APK / Bundle outputs
 *.apk
 *.aab
+
+# Signing keys - never commit
 *.jks
 *.keystore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Internal project planning / review files
+INTERNSHIP_REVIEW_PREPARATION_GRAMAYATRI.md
+claude_md_files/
