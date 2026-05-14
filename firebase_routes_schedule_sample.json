@@ -1,0 +1,74 @@
+{
+  "routes": {
+    "RT001": {
+      "id": "RT001",
+      "name": "Doddaballapur -> Bengaluru",
+      "totalStops": 6,
+      "busOperator": "KSRTC",
+      "busNumber": "KA-43 F-1021",
+      "weeklySchedule": {
+        "MONDAY": { "startTimes": ["06:30", "17:30"], "active": true },
+        "TUESDAY": { "startTimes": ["06:30", "17:30"], "active": true },
+        "WEDNESDAY": { "startTimes": ["07:00", "18:00"], "active": true },
+        "THURSDAY": { "startTimes": ["06:30", "17:30"], "active": true },
+        "FRIDAY": { "startTimes": ["06:30", "17:30"], "active": true },
+        "SATURDAY": { "startTimes": ["07:30", "16:30"], "active": true },
+        "SUNDAY": { "startTimes": ["08:30"], "active": true }
+      },
+      "stops": {
+        "S1": { "id": "S1", "name": "Doddaballapur", "order": 1, "attToNextMin": 15 },
+        "S2": { "id": "S2", "name": "Tubagere Cross", "order": 2, "attToNextMin": 12 },
+        "S3": { "id": "S3", "name": "Doddajala", "order": 3, "attToNextMin": 18 },
+        "S4": { "id": "S4", "name": "Yelahanka", "order": 4, "attToNextMin": 10 },
+        "S5": { "id": "S5", "name": "Hebbal", "order": 5, "attToNextMin": 8 },
+        "S6": { "id": "S6", "name": "Kempegowda Bus Station", "order": 6, "attToNextMin": 0 }
+      }
+    },
+    "RT002": {
+      "id": "RT002",
+      "name": "Chikkaballapur -> Bengaluru",
+      "totalStops": 5,
+      "busOperator": "PRIVATE",
+      "busNumber": "KA-40 B-7781",
+      "weeklySchedule": {
+        "MONDAY": { "startTimes": ["06:45", "16:45"], "active": true },
+        "TUESDAY": { "startTimes": ["06:45", "16:45"], "active": true },
+        "WEDNESDAY": { "startTimes": ["06:45", "16:45"], "active": true },
+        "THURSDAY": { "startTimes": ["07:15", "17:15"], "active": true },
+        "FRIDAY": { "startTimes": ["06:45", "16:45"], "active": true },
+        "SATURDAY": { "startTimes": ["08:00"], "active": true },
+        "SUNDAY": { "startTimes": [], "active": false }
+      },
+      "stops": {
+        "S1": { "id": "S1", "name": "Chikkaballapur", "order": 1, "attToNextMin": 20 },
+        "S2": { "id": "S2", "name": "Nandi Cross", "order": 2, "attToNextMin": 18 },
+        "S3": { "id": "S3", "name": "Devanahalli", "order": 3, "attToNextMin": 22 },
+        "S4": { "id": "S4", "name": "Kempapura", "order": 4, "attToNextMin": 12 },
+        "S5": { "id": "S5", "name": "Kempegowda Bus Station", "order": 5, "attToNextMin": 0 }
+      }
+    },
+    "RT003": {
+      "id": "RT003",
+      "name": "Nelamangala -> Bengaluru",
+      "totalStops": 5,
+      "busOperator": "BMTC",
+      "busNumber": "KA-57 F-2234",
+      "weeklySchedule": {
+        "MONDAY": { "startTimes": ["06:15", "13:00", "18:30"], "active": true },
+        "TUESDAY": { "startTimes": ["06:15", "13:00", "18:30"], "active": true },
+        "WEDNESDAY": { "startTimes": ["06:15", "13:00", "18:30"], "active": true },
+        "THURSDAY": { "startTimes": ["06:15", "13:00", "18:30"], "active": true },
+        "FRIDAY": { "startTimes": ["06:15", "13:00", "18:30"], "active": true },
+        "SATURDAY": { "startTimes": ["07:00", "17:00"], "active": true },
+        "SUNDAY": { "startTimes": ["08:00"], "active": true }
+      },
+      "stops": {
+        "S1": { "id": "S1", "name": "Nelamangala", "order": 1, "attToNextMin": 14 },
+        "S2": { "id": "S2", "name": "Madanayakanahalli", "order": 2, "attToNextMin": 12 },
+        "S3": { "id": "S3", "name": "Peenya", "order": 3, "attToNextMin": 16 },
+        "S4": { "id": "S4", "name": "Yeshwanthpur", "order": 4, "attToNextMin": 10 },
+        "S5": { "id": "S5", "name": "Majestic", "order": 5, "attToNextMin": 0 }
+      }
+    }
+  }
+}

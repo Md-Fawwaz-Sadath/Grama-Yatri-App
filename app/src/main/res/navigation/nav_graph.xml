@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.gramayatri.app.ui.splash.SplashFragment"
+        android:label="Splash" />
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.gramayatri.app.ui.onboarding.OnboardingFragment"
+        android:label="Onboarding" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gramayatri.app.ui.home.HomeFragment"
+        android:label="@string/nav_home" />
+
+    <fragment
+        android:id="@+id/liveTrackingFragment"
+        android:name="com.gramayatri.app.ui.tracking.LiveTrackingFragment"
+        android:label="@string/live_tracking_title">
+        <argument
+            android:name="routeId"
+            app:argType="string" />
+        <argument
+            android:name="selectedDayKey"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/alertsFragment"
+        android:name="com.gramayatri.app.ui.alerts.AlertsFragment"
+        android:label="@string/nav_alerts" />
+
+    <fragment
+        android:id="@+id/reportAlertFragment"
+        android:name="com.gramayatri.app.ui.alerts.ReportAlertFragment"
+        android:label="@string/report_alert_title" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.gramayatri.app.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile" />
+</navigation>

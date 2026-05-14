@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_primary">#155E4B</color>
+    <color name="green_medium">#2FA06F</color>
+    <color name="green_light">#E8F5EF</color>
+    <color name="eta_green">#237B55</color>
+    <color name="eta_amber">#C77700</color>
+    <color name="eta_red_amber">#B5482D</color>
+    <color name="eta_grey">#8B8F93</color>
+    <color name="text_primary">#16212B</color>
+    <color name="text_secondary">#667085</color>
+    <color name="background">#FFF8EC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="divider">#E8E2D7</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="terracotta">#D75A3A</color>
+    <color name="amber_soft">#FFF1D6</color>
+    <color name="green_soft">#F0FBF5</color>
+    <color name="surface_muted">#F7F1E7</color>
+    <color name="navy_soft">#203040</color>
+    <color name="cream_deep">#F2E7D5</color>
+    <color name="chip_neutral">#F3EEE6</color>
+    <color name="alert_soft">#FDECE7</color>
+</resources>

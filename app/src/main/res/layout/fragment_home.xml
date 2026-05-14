@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navy_soft"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/home_title"
+        app:titleTextColor="@color/white" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/accessibility_tip_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/surface"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="1dp"
+        app:strokeColor="@color/green_medium"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/need_help_reading"
+                    android:textColor="@color/navy_soft"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/home_accessibility_tip"
+                    android:textColor="@color/text_primary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/tip_will_not_show_again"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dismiss_accessibility_tip_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:minWidth="64dp"
+                android:text="@string/dismiss_alert"
+                android:textAllCaps="false"
+                android:textColor="@color/green_primary" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <include
+        android:id="@+id/route_health_summary"
+        layout="@layout/view_route_health_summary" />
+
+    <HorizontalScrollView
+        android:id="@+id/schedule_filter_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:contentDescription="@string/filter_schedule_content_description"
+        android:fillViewport="false"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/weekday_button_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mon_day_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="68dp"
+            android:layout_height="48dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/day_mon"
+            android:textAllCaps="false"
+            android:textColor="@color/green_primary"
+            app:cornerRadius="18dp"
+            app:strokeColor="@color/green_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tue_day_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="68dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/day_tue"
+            android:textAllCaps="false"
+            android:textColor="@color/green_primary"
+            app:cornerRadius="18dp"
+            app:strokeColor="@color/green_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/wed_day_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="68dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/day_wed"
+            android:textAllCaps="false"
+            android:textColor="@color/green_primary"
+            app:cornerRadius="18dp"
+            app:strokeColor="@color/green_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/thu_day_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="68dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/day_thu"
+            android:textAllCaps="false"
+            android:textColor="@color/green_primary"
+            app:cornerRadius="18dp"
+            app:strokeColor="@color/green_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fri_day_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="68dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/day_fri"
+            android:textAllCaps="false"
+            android:textColor="@color/green_primary"
+            app:cornerRadius="18dp"
+            app:strokeColor="@color/green_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sat_day_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="68dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/day_sat"
+            android:textAllCaps="false"
+            android:textColor="@color/green_primary"
+            app:cornerRadius="18dp"
+            app:strokeColor="@color/green_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sun_day_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="68dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/day_sun"
+            android:textAllCaps="false"
+            android:textColor="@color/green_primary"
+            app:cornerRadius="18dp"
+            app:strokeColor="@color/green_primary" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/routes_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/routes_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/empty_state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="24dp"
+            android:text="@string/home_empty_state"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

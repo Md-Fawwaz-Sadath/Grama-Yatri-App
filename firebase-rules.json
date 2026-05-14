@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "routes": {
+      ".read": true,
+      ".write": false
+    },
+    "pings": {
+      "$routeId": {
+        ".read": true,
+        ".write": "auth != null"
+      }
+    },
+    "alerts": {
+      "$routeId": {
+        ".read": true,
+        ".write": "auth != null"
+      }
+    },
+    "userPrefs": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    }
+  }
+}
